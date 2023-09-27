@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/navbar';
 import Body from './components/body';
-import SlidingCards from './components/slidingCards';
+import CardsSection from './components/cardsSection';
 
 function App() {
   return (
@@ -11,27 +11,7 @@ function App() {
       </header>
       <main>
         <Body/>
-        <SlidingCards/>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
-        <h1>LOLOLOLOLOLOLOL</h1>
+        <CardsSection/>
       </main>
     </>
   );
