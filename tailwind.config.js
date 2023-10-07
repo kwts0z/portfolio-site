@@ -13,6 +13,7 @@ module.exports = {
         'secondary': '#001e11',
         'accent': '#66e901',
         'accent-v2': '#d8f5c1',
+        'transparentText': '#2E0F41',
        },
     },
   },
