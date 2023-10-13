@@ -1,5 +1,16 @@
 import React, { useState, useEffect } from 'react';
-function Navbar() {
+import { slide as Menu } from 'react-burger-menu'
+import "./styles/navbar.css"
+
+function scrollToSection(elementId) {
+  console.log('scrollToSection called with elementId:', elementId);
+  const element = document.getElementById(elementId);
+  if(element){
+    element.scrollIntoView({ behavior: 'smooth' });
+  };
+}
+
+function Navbar({}) {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
 
@@ -18,23 +29,33 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [prevScrollPos]);
-
   return (
-    <div className={`flex justify-between items-center h-20 z-50 fixed w-full bg-opacity-70 bg-gradient-to-b from-black/70 transition-all duration-300 ${isNavbarVisible ? 'opacity-100 transform-none' : 'opacity-0 -translate-y-full'}`}>
-      <div className="items-center">
-        <h1 className="ml-4 text-3xl cursor-pointer hover:text-4xl duration-100">
-          <span className="text-accent font-bold">&lt;</span>
-          <span className="text-text font-bold">YASI0</span>
-          <span className="text-accent font-bold">/&gt;</span>
-        </h1>
+    <div>
+      <div className={`flex fixed justify-between items-center h-20 z-40 w-full bg-opacity-70 mix-blend-difference bg-gradient-to-b from-white/70 transition-all duration-300 ${isNavbarVisible ? 'opacity-100 transform-none' : 'opacity-0 -translate-y-full'}`}>
+        <div className="hidden items-center md:flex ">
+          <h1 className="ml-4 text-3xl cursor-pointer hover:text-4xl duration-100">
+            <span className="text-black  font-bold">&lt;</span>
+            <span className="text-white font-bold">K0NSTANTIN0S</span>
+            <span className="text-black  font-bold">/&gt;</span>
+          </h1>
+        </div>
+        <ul className="hidden font-bold space-x-4 mr-4 text-2xl md:flex">
+          <li className="text-white cursor-pointer opacity-100 hover:opacity-60"><a href='#home' onClick={(e) => {e.preventDefault(); scrollToSection('home')}}>Home</a><span className="text-black font-bold">/&gt;</span></li>
+          <li className="text-white cursor-pointer opacity-100 hover:opacity-60"><a href='#education' onClick={(e) => {e.preventDefault(); scrollToSection('education')}}>Education</a><span className="text-black font-bold">/&gt;</span></li>
+          <li className="text-white cursor-pointer opacity-100 hover:opacity-60"><a href='#projects' onClick={(e) => {e.preventDefault(); scrollToSection('projects')}}>Projects</a><span className="text-black font-bold">/&gt;</span></li>
+          <li className="text-white cursor-pointer opacity-100 hover:opacity-60"><a href='#footer' onClick={(e) => {e.preventDefault(); scrollToSection('footer')}}>Contact</a><span className="text-black font-bold">/&gt;</span></li>
+        </ul>
       </div>
-      <li className="flex text-disabled-text font-bold space-x-4 mr-4 text-2xl">
-        <ul className="text-text">Start<span className="text-accent-v2 font-bold">/&gt;</span></ul>
-        <ul className="hover:text-slate-100 cursor-pointer">Work<span className="text-accent-v2 font-bold hover:text-accent">/&gt;</span></ul>
-        <ul className="hover:text-slate-100 cursor-pointer">Lab<span className="text-accent-v2 font-bold hover:text-accent">/&gt;</span></ul>
-        <ul className="hover:text-slate-100 cursor-pointer">About<span className="text-accent-v2 font-bold hover:text-accent">/&gt;</span></ul>
-        <ul className="hover:text-slate-100 cursor-pointer">Contact<span className="text-accent-v2 font-bold hover:text-accent">/&gt;</span></ul>
-      </li>
+      <div className={`md:hidden z-50 flex fixed w-full transition-all duration-300 ${isNavbarVisible ? 'opacity-100 transform-none' : 'opacity-0 -translate-y-full'}`}>
+          <Menu right>
+            <ul className="flex flex-col space-y-5 font-bold mr-4 text-2xl ">
+              <li className="text-fuchsia-50 cursor-pointer opacity-100 hover:opacity-60"><a href='#home' onClick={(e) => {e.preventDefault(); scrollToSection('home')}}>Home</a><span className="text-background  font-bold">/&gt;</span></li>
+              <li className="text-fuchsia-50 cursor-pointer opacity-100 hover:opacity-60"><a href='#education' onClick={(e) => {e.preventDefault(); scrollToSection('education')}}>Education</a><span className="text-background font-bold">/&gt;</span></li>
+              <li className="text-fuchsia-50 cursor-pointer opacity-100 hover:opacity-60"><a href='#projects' onClick={(e) => {e.preventDefault(); scrollToSection('projects')}}>Projects</a><span className="text-background font-bold">/&gt;</span></li>
+              <li className="text-fuchsia-50 cursor-pointer opacity-100 hover:opacity-60"><a href='#footer' onClick={(e) => {e.preventDefault(); scrollToSection('footer')}}>Contact</a><span className="text-background  font-bold">/&gt;</span></li>
+            </ul>
+          </Menu>
+        </div>
     </div>
   );
 }

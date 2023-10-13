@@ -1,0 +1,5 @@
+<svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><defs><linearGradient id="Gradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%"  stop-color="#92ECB6"/>
+      <stop offset="90%" stop-color="#92ECB6"/>
+    </linearGradient></defs><style>
+  </style><rect x="0" y="0" width="900" height="600" fill="url(#Gradient)"></rect></svg>

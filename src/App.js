@@ -8,17 +8,17 @@ import Navbar from './components/navbar';
 
 function App() {
   return (
-    <>
+    <div id="outer-container" className='h-full overflow-hidden'>
       <header className="App-header">
       </header>
-      <main>
-        <Navbar/>
+      <Navbar pageWrapID={"page-wrap"} outerContainerId={"outer-container"} className='h-full'/>
+      <main id='page-wrap' className='h-full overflow: auto;'>
         <Body/>
         <CardsSection/>
         <ProjectsSection/>
         <Footer/>
       </main>
-    </>
+    </div>
   );
 }
 

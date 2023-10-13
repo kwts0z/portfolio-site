@@ -7,18 +7,20 @@ import udemyImg from '../assets/images/udemyImg.png'
 
 const CardsSection = () => {
   return (
-    <>
-      <h1 className='absolute text-9xl font-extrabold justify-start -mt-5 ml-20 tracking-widest'>Education</h1>
+    <div id="education" className='relative flex flex-col w-full h-full'>
+      <div className="flex h-full w-full px-5 pt-16">
+        <h1 className="text-8xl font-extrabold -z-10 text-text lg:text-9xl">Education</h1>
+      </div>
       <section className='flex flex-col justify-center items-center m-10 mt-32 space-y-10 pb-20'>
-        <SlidingCards icon = {universityImg} title="University Of Pelloponese" text="Department of Informatics and Telecommunications" rightText="Education"/>
-        <SlidingCards icon = {courseraImg} title="Meta Front-End Developer Specialization" text="Coursera" rightText="ReactJS Certification"/>
-        <SlidingCards icon = {udemyImg} title="C# Unity Game Developer 2D" text="Udemy" rightText="Unity2d Certification"/>
+        <SlidingCards icon = {universityImg} title="University Of Pelloponese" text="Department of Informatics and Telecommunications" rightText="University"/>
+        <SlidingCards icon = {courseraImg} title="Meta Front-End Developer Specialization" text="Coursera" rightText="Certification"/>
+        <SlidingCards icon = {udemyImg} title="C# Unity Game Developer 2D" text="Udemy" rightText="Certification"/>
         <SlidingCards icon = {michiganImg}
-                      title="Michigan Certificate of English Language proficiency"
-                      text="Department of Informatics and Telecommunications"
+                      title="Certificate of English Language proficiency"
+                      text="Michigan"
                       rightText="Language"/>
       </section>
-    </>
+    </div>
   );
 };
 

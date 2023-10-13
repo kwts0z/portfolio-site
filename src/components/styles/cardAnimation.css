@@ -9,8 +9,8 @@
   --card-width: calc(var(--card-height) / 1.5);
 }
 
-.card {
-  background: #191c29;
+#card {
+  background: #71436f;
   width: var(--card-width);
   height: var(--card-height);
   position: relative;
@@ -24,25 +24,31 @@
   box-shadow: 10px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
-  color: rgb(88 199 250 / 100%);
-  transition: color 1s;
+#card:hover {
+  color: #92ECB6;
+  transition: color 0.5s;
+  /* border-style: solid;
+  border-width: 5px;
+  border-color: #46e246;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0; */
 }
-.card:hover:before, .card:hover:after {
+
+#card:hover:before, #card:hover:after {
   animation: spin 2.5s linear infinite;
   opacity: 1;
   transform: scale(1);
   transition: transform 0.2s;
 }
 
-.card::before {
+#card::before {
   content: "";
   width: 104%;
   height: 102%;
   border-radius: 8px;
-  background-image: linear-gradient(
-    var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2
+  background: linear-gradient(
+    #382536, #382536 43%, #382536
   );
   position: absolute;
   z-index: -1;
@@ -52,7 +58,7 @@
   transform: scale(0);
 }
 
-.card::after {
+#card::after {
   position: absolute;
   content: "";
   top: calc(var(--card-height) / 6);
@@ -64,9 +70,9 @@
   margin: 0 auto;
   transform: scale(0);
   filter: blur(calc(var(--card-height) / 6));
-  background-image: linear-gradient(
+  background: linear-gradient(
     var(--rotate)
-    , #5ddcff, #3c67e3 43%, #4e00c2
+    , #382536, #382536 43%, #382536
   );
   opacity: 0;
   animation: none;
@@ -81,7 +87,7 @@
   }
 }
 
-.custom-shape-divider-bottom-1696425342 {
+#card-shape-divider {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -91,13 +97,13 @@
   z-index: 1;
 }
 
-.custom-shape-divider-bottom-1696425342 svg {
+#card-shape-divider svg {
   position: relative;
   display: block;
   width: calc(111% + 1.3px);
   height: 15px;
 }
 
-.custom-shape-divider-bottom-1696425342 .shape-fill {
-  fill: #191C29;
+#card-shape-divider #shape-fill {
+  fill: #71436f;
 }
