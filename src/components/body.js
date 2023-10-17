@@ -15,12 +15,12 @@ function Body() {
       </div>
 
       <div className="absolute object-cover z-10 flex flex-col justify-center items-center">
-        <img className="rounded-full h-80 w-80" src={avatar} alt="My avatar" ></img>
-        <h1 className="text-4xl space-x-4 m-10">
-          <span className="text-secondary">Hi, my name is</span>
-          <span className="text-background">Konstantinos Giannopoulos</span>
-          <span className="text-secondary">I design and develop things!</span>
-        </h1>
+        <img className="rounded-full h-64 w-64 md:h-80 md:w-80" src={avatar} alt="My avatar" ></img>
+        <p className="text-4xl space-x-4 m-10">
+          <span className="text-secondary">" Explore my work as a software developer,</span>
+          <span className="text-background">Konstantinos</span>
+          <span className="text-secondary">"</span>
+        </p>
       </div>
     </div>
   );
