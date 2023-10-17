@@ -12,7 +12,7 @@ function ProjectsSection() {
         <h1 className="text-8xl font-extrabold -z-10 text-text lg:text-9xl">Projects</h1>
       </div>
       <div className="flex flex-col pb-56 w-full justify-center items-center space-y-10">
-        <div className="flex flex-col pt-10 items-center space-y-10 lg:space-y-0 lg:space-x-20 lg:flex-row">
+        <div className="flex flex-col pt-10 items-center space-y-10 lg:space-y-0 lg:space-x-10 xl:space-x-20 lg:flex-row">
           <div className="relative lg:top-24"><Card image={image} /></div>
           <Card image={image}/>
           <div className="relative lg:top-24"><Card image={image} /></div>
