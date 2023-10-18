@@ -14,10 +14,10 @@ function Body() {
         <canvas className="relative bg-primary" id="stars"></canvas>
       </div>
 
-      <div className="absolute object-cover z-10 flex flex-col justify-center items-center">
+      <div className="absolute flex flex-col w-full z-10 justify-center items-center text-center">
         <img className="rounded-full h-64 w-64 md:h-80 md:w-80" src={avatar} alt="My avatar" ></img>
-        <p className="text-4xl space-x-4 m-10">
-          <span className="text-secondary">" Explore my work as a software developer,</span>
+        <p className="flex flex-wrap text-4xl pt-20 items-center justify-center">
+          <span className="text-secondary">"Explore my work as a software developer,&nbsp;</span>
           <span className="text-background">Konstantinos</span>
           <span className="text-secondary">"</span>
         </p>

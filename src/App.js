@@ -13,11 +13,10 @@ function App() {
     inject();
   }, []);
   return (
-    <div id="outer-container" className='h-full overflow-hidden'>
-      <header className="App-header">
-      </header>
+    <div id="outer-container" className='h-full w-full overflow-hidden'>
+      <header className="App-header"/>
       <Navbar pageWrapID={"page-wrap"} outerContainerId={"outer-container"} className='h-full'/>
-      <main id='page-wrap' className='h-full overflow: auto;'>
+      <main id='page-wrap' className='h-full w-full overflow-hidden'>
         <Body/>
         <CardsSection/>
         <ProjectsSection/>

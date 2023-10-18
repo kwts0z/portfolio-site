@@ -20,7 +20,7 @@ const SlidingCards = ({ icon, title, text, rightText }) => {
         style={{ translateX: moveLeft }}
         className={`absolute -mr-[60%] flex flex-row items-center pl-10 p-5 space-x-2 bg-primary rounded-ss-3xl rounded-es-3xl z-10 w-[100%] h-full text-fuchsia-50 lg:w-2/5 lg:mr-0 lg:rounded-3xl `}
       >
-        <img src={icon} alt={text + " symbol"} className='h-1/2'></img>
+        <img src={icon} alt={text + " symbol"} className='h-1/3 md:h-1/2'></img>
         <div>
           <h1 className='mx-10 my-5 text-xl font-bold xl:text-3xl'>{title}</h1>
           <h2 className='mx-10 my-5 text-lg xl:text-2xl'>{text}</h2>
