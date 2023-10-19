@@ -1,0 +1,68 @@
+.image-slider {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.right-arrow {
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 8px;
+  font-size: 40px;
+  color: #92ECB6;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.right-arrow:hover {
+  opacity: 0.8;
+}
+
+.left-arrow {
+  user-select: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 8px;
+  font-size: 40px;
+  color: #92ECB6;
+  z-index: 1;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.left-arrow:hover {
+  opacity: 0.8;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.dots-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  color: #71436f;
+  margin: 0 3px;
+  cursor: pointer;
+  font-size: 20px;
+  opacity: 0.4;
+}
+
+.dot:hover {
+  opacity: 0.7;
+}
