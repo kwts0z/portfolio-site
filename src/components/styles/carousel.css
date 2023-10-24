@@ -5,16 +5,22 @@
 }
 
 .right-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
   user-select: none;
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  right: 8px;
+  top: 0%;
+  right: 0%;
   font-size: 40px;
   color: #92ECB6;
   z-index: 1;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
+  height: 100%;
+  background: linear-gradient(to left, #000000, #00000000);
 }
 
 .right-arrow:hover {
@@ -22,16 +28,21 @@
 }
 
 .left-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  justify-self: center;
   user-select: none;
   position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 8px;
+  top: 0%;
   font-size: 40px;
   color: #92ECB6;
   z-index: 1;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
+  height: 100%;
+  background: linear-gradient(to right, #000000, #00000000);
 }
 
 .left-arrow:hover {

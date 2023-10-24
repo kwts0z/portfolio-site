@@ -23,7 +23,7 @@ function Card({image, video, title, subtitle}) {
     return (
       <motion.div ref={ref} style={{translateY:moveUp, opacity: opacity}}>
         <div id="card">
-          <div className="relative w-full h-1/2">
+          <div className="relative w-full h-1/2 px-1 pt-1">
             <ImageSlider slides={image}/>
             <div id="card-shape-divider">
               <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -43,7 +43,7 @@ function Card({image, video, title, subtitle}) {
     return (
       <motion.div ref={ref} style={{translateY:moveUp, opacity: opacity}}>
         <div id="card">
-          <div className="relative w-full h-1/2">
+          <div className="relative w-full h-1/2 px-1 pt-1">
             <div className="w-full h-full bg-gray-200 rounded-t-md pt-5"><ReactPlayer width='100%' height='90%' url={video} controls={true}/></div>
             
             <div id="card-shape-divider">

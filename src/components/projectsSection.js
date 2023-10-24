@@ -4,14 +4,22 @@ import skoteImage from "../assets/images/skote-site-1.png"
 import skoteImage2 from "../assets/images/skote-site-2.png"
 import skoteImage3 from "../assets/images/skote-site-3.png"
 import skoteImage4 from "../assets/images/skote-site-4.png"
+import siteImage2 from "../assets/images/thisSite2.png"
+import siteImage3 from "../assets/images/thisSite3.png"
 
 function ProjectsSection() {
-  const slides = [
-    { url: skoteImage, title: "door" },
-    { url: skoteImage2, title: "red carpet door" },
-    { url: skoteImage3, title: "christmas door" },
-    { url: skoteImage4, title: "drop cup" },
+  const skote = [
+    { url: skoteImage, title: "Georgios audio portfolio website" },
+    { url: skoteImage2, title: "Georgios audio portfolio website" },
+    { url: skoteImage3, title: "Georgios audio portfolio website" },
+    { url: skoteImage4, title: "Georgios audio portfolio website" },
   ];
+
+  const thisSite = [
+    { url: siteImage2, title: "This portfolio website" },
+    { url: siteImage3, title: "This portfolio website" },
+  ];
+
 
   return (
     <div id="projects" className="relative flex flex-col items-center justify-center w-full" >
@@ -22,8 +30,8 @@ function ProjectsSection() {
       <div className="flex flex-col pb-56 w-full justify-center items-center space-y-10">
 
         <div className="flex flex-col pt-10 items-center space-y-10 xl:space-y-0 xl:space-x-20 xl:flex-row">
-          <div className="relative xl:top-24"><Card image={slides} title="Georgios Audio Website" subtitle="A portfolio website for sound designer Georgios."/></div>
-          <Card image={slides} title="This Website" subtitle="This is my portfolio website designed and developed by me."/>
+          <div className="relative xl:top-24"><Card image={skote} title="Georgios Audio Website" subtitle="A portfolio website for sound designer Georgios."/></div>
+          <Card image={thisSite} title="This Website" subtitle="This is my portfolio website designed and developed by me."/>
           <div className="relative xl:top-24"><Card video="https://www.youtube.com/watch?v=g9xeKVPCkvw" title="PikPok" subtitle="PikPok is a simple social media platform like instagram, developed as a university project."/></div>
         </div>
 
