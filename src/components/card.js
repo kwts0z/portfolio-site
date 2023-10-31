@@ -8,7 +8,7 @@ import skoteImage2 from "../assets/images/skote-site-2.png"
 import skoteImage3 from "../assets/images/skote-site-3.png"
 import skoteImage4 from "../assets/images/skote-site-4.png"
 
-function Card({image, video, title, subtitle}) {
+function Card({image, video, title, subtitle, url}) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,6 +18,12 @@ function Card({image, video, title, subtitle}) {
   const spring = useSpring(scrollYProgress, { stiffness: 100, damping: 20 });
   const moveUp = useTransform(spring, [0, 1], ["50%", "0%"]);
   const opacity = useTransform(spring, [0, 1], ["0%", "100%"]);
+
+  const openLinkInNewTab = () => {
+    if(url){
+      window.open(url, '_blank');
+    }
+  };
 
   if (image) {
     return (
@@ -31,7 +37,7 @@ function Card({image, video, title, subtitle}) {
               </svg>
             </div>
           </div>
-          <div className="relative w-full pt-5 px-7 mb-5 space-y-5 overflow-y-auto">
+          <div className="relative w-full pt-5 px-7 mb-5 space-y-5 overflow-y-auto" onClick={openLinkInNewTab}>
             <h1 className="text-xl lg:text-3xl font-bold">{title}</h1>
             <p>{subtitle}</p>
           </div>
@@ -52,7 +58,7 @@ function Card({image, video, title, subtitle}) {
               </svg>
             </div>
           </div>
-          <div className="relative w-full pt-5 px-7 mb-5 space-y-5 overflow-y-auto">
+          <div className="relative w-full pt-5 px-7 mb-5 space-y-5 overflow-y-auto" onClick={openLinkInNewTab}>
             <h1 className="text-xl lg:text-3xl font-bold">{title}</h1>
             <p>{subtitle}</p>
           </div>
