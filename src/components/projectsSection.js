@@ -4,6 +4,7 @@ import skoteImage from "../assets/images/skote-site-1.png"
 import skoteImage2 from "../assets/images/skote-site-2.png"
 import skoteImage3 from "../assets/images/skote-site-3.png"
 import skoteImage4 from "../assets/images/skote-site-4.png"
+import siteImage1 from "../assets/images/thisSite1.png"
 import siteImage2 from "../assets/images/thisSite2.png"
 import siteImage3 from "../assets/images/thisSite3.png"
 
@@ -16,6 +17,7 @@ function ProjectsSection() {
   ];
 
   const thisSite = [
+    { url: siteImage1, title: "This portfolio website" },
     { url: siteImage2, title: "This portfolio website" },
     { url: siteImage3, title: "This portfolio website" },
   ];
