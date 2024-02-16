@@ -7,6 +7,15 @@ import skoteImage4 from "../assets/images/skote-site-4.png"
 import siteImage1 from "../assets/images/thisSite1.png"
 import siteImage2 from "../assets/images/thisSite2.png"
 import siteImage3 from "../assets/images/thisSite3.png"
+import pressIt1 from "../assets/images/pressIt1.png"
+import pressIt2 from "../assets/images/pressIt2.png"
+import pressIt3 from "../assets/images/pressIt3.png"
+import pressIt4 from "../assets/images/pressIt4.png"
+import pressIt5 from "../assets/images/pressIt5.png"
+import pressIt6 from "../assets/images/pressIt6.png"
+import weather1 from "../assets/images/weather1.png"
+import weather2 from "../assets/images/weather2.png"
+import weather3 from "../assets/images/weather3.png"
 
 function ProjectsSection() {
   const skote = [
@@ -22,6 +31,20 @@ function ProjectsSection() {
     { url: siteImage3, title: "This portfolio website" },
   ];
 
+  const pressIt = [
+    { url: pressIt1, title: "Press it minigame webapp" },
+    { url: pressIt2, title: "Press it minigame webapp" },
+    { url: pressIt3, title: "Press it minigame webapp" },
+    { url: pressIt4, title: "Press it minigame webapp" },
+    { url: pressIt5, title: "Press it minigame webapp" },
+    { url: pressIt6, title: "Press it minigame webapp" },
+  ];
+
+  const weather = [
+    { url: weather1, title: "This portfolio website" },
+    { url: weather2, title: "This portfolio website" },
+    { url: weather3, title: "This portfolio website" },
+  ];
 
   return (
     <div id="projects" className="relative flex flex-col items-center justify-center w-full" >
@@ -40,12 +63,15 @@ function ProjectsSection() {
         <div className="flex flex-col items-center space-y-10 xl:space-y-0 xl:space-x-20 xl:flex-row xl:pt-40">
           <div className="relative xl:top-24"><Card video="https://youtu.be/E9CtiereuWc" title="OpenGL" subtitle="This university project was developed using OpenGL to create a 3D scene featuring an airplane rotating around the Earth."/></div>
           <Card video="https://youtu.be/PXRCxz0rN-M" title="Car Washing System" subtitle="This is a server/client app designed to automate the process at a car washing company. This is part of a university project" url="https://github.com/kwts0z/car-washing-auto-system"/>
+          <div className="relative xl:top-24"><Card image={pressIt} title="PressIt: minigame" subtitle="This is a minigame i made with nextJS. Squares spawn at random and you must click them. You can also save your score and see yourself on the leaderboard." url="https://github.com/kwts0z/pressIt"/></div>
+        </div>
+
+        <div className="flex flex-col items-center space-y-10 xl:space-y-0 xl:space-x-20 xl:flex-row xl:pt-40">
+          <div className="relative xl:top-24"><Card image={weather} title="Weather App" subtitle="A weather app that you provide the Country/City/coords you want and it tells you the weather there at the exact moment." url="https://github.com/kwts0z/weather-app"/></div>
+          <Card video="https://youtu.be/iywGxnhXyhw" title="Article Search Engine" subtitle="An Apache Lucene-powered search engine for articles, offering advanced search capabilities through diverse fields and the ability to manage articles with ease." url="https://github.com/kwts0z/TReSA"/>
           <div className="relative xl:top-24"><Card video="https://youtu.be/6q8DK-yLDlw" title="Weather Forecast App" subtitle="In this university project, I utilized Scrapy for web scraping to collect and filter weather data from three forecast websites based on humidity, temperature, and wind speed." url="https://github.com/Circe-s-House/weather-forecast"/></div>
         </div>
 
-        <div className="xl:pt-24">
-          <Card video="https://youtu.be/iywGxnhXyhw" title="Article Search Engine" subtitle="An Apache Lucene-powered search engine for articles, offering advanced search capabilities through diverse fields and the ability to manage articles with ease." url="https://github.com/kwts0z/TReSA"/>
-        </div>
       </div>
 
       <div id="custom-shape-divider-bottom-1697562712">

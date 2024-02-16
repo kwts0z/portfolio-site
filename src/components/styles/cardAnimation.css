@@ -1,9 +1,3 @@
-@property --rotate {
-  syntax: "<angle>";
-  initial-value: 132deg;
-  inherits: false;
-}
-
 :root {
   --card-height: 55vh;
   --card-width: calc(var(--card-height) / 1.5);
@@ -26,20 +20,13 @@
 
 #card:hover {
   color: #92ECB6;
-  transition: color 0.5s;
-  /* border-style: solid;
-  border-width: 5px;
-  border-color: #46e246;
-  border-radius: 10px;
-  padding: 0;
-  margin: 0; */
+  transition: color 0.1s;
 }
 
 #card:hover:before, #card:hover:after {
-  animation: spin 2.5s linear infinite;
   opacity: 1;
   transform: scale(1);
-  transition: transform 0.2s;
+  transition: opacity 0.4s;
 }
 
 #card::before {
@@ -71,21 +58,12 @@
   transform: scale(0);
   filter: blur(calc(var(--card-height) / 6));
   background: linear-gradient(
-    var(--rotate)
-    , #382536, #382536 43%, #382536
+    #382536, #382536 43%, #382536
   );
   opacity: 0;
   animation: none;
 }
 
-@keyframes spin {
-  0% {
-    --rotate: 0deg;
-  }
-  100% {
-    --rotate: 360deg;
-  }
-}
 
 #card-shape-divider {
   position: absolute;

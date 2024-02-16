@@ -1,17 +1,12 @@
-import "./styles/animation.css"
-import React, {useEffect} from "react";
+import React from "react";
 import avatar from "../assets/images/avatar.png"
-import { init } from "./animation";
+import NewAnimation from "./newAnimation";
 
 function Body() {
-  //This way the animation code will run after Body has rendered
-  useEffect(() => {
-    init();
-  }, []);
   return (
     <div id="home" className="flex flex-col justify-center items-center h-full w-full bg-inherit">
-      <div className="w-full h-screen" id="stars-bg">
-        <canvas className="relative bg-primary" id="stars"></canvas>
+      <div className="w-full h-screen">
+        <NewAnimation/>
       </div>
 
       <div className="absolute flex flex-col w-full z-10 justify-center items-center text-center">
