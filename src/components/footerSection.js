@@ -1,5 +1,5 @@
 import linkedIn from "../assets/images/linkedIn.png";
-import email from "../assets/images/email.png";
+import email from "../assets/images/email2.png";
 import github from "../assets/images/github.png";
 
 function scrollToSection(elementId) {

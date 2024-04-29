@@ -18,7 +18,6 @@ function Body() {
           <span className="text-secondary">"</span>
         </p>
       </div>
-      
     </div>
   );
 }

@@ -29,6 +29,7 @@ body{
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    margin-bottom: -1px;
 }
 
 .divider svg {
