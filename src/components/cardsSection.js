@@ -7,7 +7,7 @@ import udemyImg from '../assets/images/udemyImg.png'
 
 const CardsSection = () => {
   return (
-    <div id="education" className='relative flex flex-col w-full h-full'>
+    <div id="education" className='relative flex flex-col w-full h-full p-0 m-0'>
       <div className="flex h-full w-full px-5 pt-28 lg:pt-16">
         <h1 className="text-7xl font-extrabold -z-10 text-text lg:text-9xl">Education</h1>
       </div>
