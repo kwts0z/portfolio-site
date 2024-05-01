@@ -4,7 +4,7 @@ import NewAnimation from "./newAnimation";
 
 function Body() {
   return (
-    <div id="home" className="flex flex-col justify-center items-center h-screen w-full bg-inherit">
+    <div id="home" className="flex flex-col justify-center items-center h-scree w-full bg-inherit">
       <div className="w-full h-full">
         <NewAnimation/>
       </div>
